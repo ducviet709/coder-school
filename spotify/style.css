@@ -1,0 +1,247 @@
+body{
+    color:white;
+    margin:0;
+  }
+nav {
+    height: 60px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+  }
+  
+footer {
+    height: 400px;
+    background-color: black;
+      }
+.container {
+   display: flex;
+   align-items: center;
+   margin-left: 30px;
+  }
+.nav-area{
+  flex:1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+article{
+  height: 400px;
+  background-color: #ffccd2;
+  }
+#free{
+  color: black;
+  font-size: 80px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.15;
+  margin-bottom: 20px;
+  letter-spacing: -0.04em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+  margin:0;
+}
+#free-buttom {
+  color: black;
+  font-size: 30px;
+  font-weight: 200;
+  line-height: 1.15;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-premium {
+  border: 0px;
+  width: 260px;
+  color: white;
+  line-height: 1;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-radius: 500px;
+  padding: 18px 42px 18px;
+  background-color: #1db954;
+  text-transform: uppercase;
+  transition-duration: 0.3s;
+  justify-content: center;
+  display: flex;
+}
+.btn-more {
+  border: 2px solid black;
+  width: 260px;
+  color:black;
+  line-height: 1;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-radius: 500px;
+  padding: 18px 42px 18px;
+  text-transform: uppercase;
+  transition-duration: 0.3s;
+  justify-content: center;
+  display: flex;
+}
+.btn-premium:hover {
+  cursor: pointer;
+  background-color: #1ed760;
+}
+.btn-more:hover {
+  cursor: pointer;
+  background-color: burlywood;
+}
+section {
+  height: 400px;
+  background-color: #f037a5;
+  background: linear-gradient(#f037a5 -60%, #fae62d 140%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(-60%, #f037a5),
+    color-stop(140%, #fae62d)
+  );
+}
+.hero-img {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("https://www.scdn.co/i/home/hero-burst.svg");
+}
+a{
+  display: flex;
+  text-decoration: none;
+  padding: 28px 17px;
+  font-weight: 700;
+  color: aliceblue;
+}
+#title {
+  color: white;
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 1.15;
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: -0.04em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+section.container {
+  flex-direction: column;
+  justify-content: center;
+}
+#title-buttom {
+  color: white;
+  font-size: 25px;
+  font-weight: 100;
+  line-height: 1.15;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.btn-spotify {
+  border: 0px;
+  width: 260px;
+  color: white;
+  margin: 0 auto;
+  line-height: 1;
+  font-size: 14px;
+  margin-top: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-radius: 500px;
+  padding: 18px 42px 18px;
+  background-color: #1db954;
+  text-transform: uppercase;
+  transition-duration: 0.3s;
+  justify-content: center;
+  display: flex;
+}
+.btn-spotify:hover {
+  cursor: pointer;
+  background-color: #1ed760;
+}
+.column > h1 {
+  color: #919496;
+  font-size: 13.5px;
+}
+
+.column > h1,
+p {
+  margin-bottom: 15px;
+}
+
+.footer-logo {
+  display: flex;
+}
+
+.footer-logo > h1 {
+  color: white;
+  font-size: 2em;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+.footer-icons {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-icons > .fab {
+  margin: 15px;
+}
+
+.footer-icons > .fab:hover {
+  color: green;
+}
+
+.footer {
+  display: flex;
+  padding: 20px;
+}
+
+.container > .left {
+  flex: 1;
+  justify-content: space-between;
+}
+.container > .right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.fab {
+  font-size: 50px;
+}
+
+a:hover {
+  color: green;
+}
+
+.column > p:hover {
+  color: green;
+  cursor: pointer;
+}
+
+.left > p:hover {
+  color: green;
+}
+.column{
+  margin: 50px;
+}
+.under{
+  display:flex;
+  color: #919496;
+}
+p{
+  margin-left: 20px;
+}
+.under > p:hover{
+  color: green;
+  cursor: pointer;
+}

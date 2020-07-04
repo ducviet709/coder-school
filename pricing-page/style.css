@@ -1,0 +1,16 @@
+.navbar-nav > .nav-item {
+    margin-left: 15px;
+  }
+
+section{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 15%;
+      }
+#third{
+    background-image: url(/img/banner.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 600px;
+}
