@@ -1,29 +1,66 @@
   
 /* =======VDuc======= */
+
+/* nav bar */
+.navbar-light{
+  background-color: transparent;
+}
+.fixed-top {
+  position: fixed;
+  z-index: 1030;
+  right: 0;
+  left: 0;
+}
+  
+.head-style {
+  height: 750px;
+  align-items: center;
+}
+.wrap {
+  font-size: 100px;
+  background-color: rgba(172, 171, 171, 0.5);
+  border-radius: 30px;
+
+}
+
+.navbar-fixed-top.scrolled {
+  background-color:red !important;
+  transition: background-color 200ms linear;
+}
+
+
+
 /* background*/
 
 body{
     background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20190223/ourmid/pngtree-blue-sky-white-clouds-blue-fresh-background-skywhite-cloudsbluebackground-image-image_87289.jpg");
     background-size: cover;
   }
-
+  
 /* amination*/
 
+  .shake{
+    padding: 15px;
+    border-radius: 15px;
+  }
   .shake:hover {
     -webkit-transform: scale(1.3);
     -ms-transform: scale(1.5);
     transform: scale(1.05);
     transition: 1s ease;
+    box-shadow:0 10px 10px royalblue;
+    border-radius: 15px;
+    padding: 15px;
 }
   
   /* wave divider*/
   
-  .editorial > .container{
+  .editorial {
     display: block;
     width: 100%;
-    height: 60px;
-    max-height: 60px;
-    margin-top: auto;
+    height: 90px;
+    max-height: 90px;
+    margin-top: 60px;
     z-index: 5;
     position: absolute;
     left: 0px;
