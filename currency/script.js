@@ -1,41 +1,50 @@
-let exchangeUsdToVnd = 23208
-let exchangeVndToUsd = 0.0000431236
+let amountInput = document.getElementById("amount");
 
-// 1 USD=22300VND
-function Exchange(money, exchangeValue) {
-    return money / exchangeValue
-}
+let convertButton = document.getElementById('convertButton');
 
-function numberWithCommas(x) {
-    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-}
+convertButton.addEventListener("click",conversionRate);
 
+function formatCurrency(type, value) {
+    const formatter = new Intl.NumberFormat(type, {
+      currency: type,
+      style: "currency"
+    });
+    return formatter.format(value);
+  }
 
-let yourMoney = prompt("Vnd or Usd");
-let amountUrMoney = prompt("How much your money?");
-
-
-let vndToUsd = Math.round(Exchange(amountUrMoney, exchangeUsdToVnd))
-console.log(vndToUsd)
-let usdToVnd = Math.round(Exchange(amountUrMoney, exchangeVndToUsd))
-console.log(usdToVnd)
-
-const formattedUSD = numberWithCommas(vndToUsd)
-const foramttedVND = numberWithCommas(usdToVnd)
-
-if(isNaN(amountUrMoney)) {
-    alert("number pls")
-} else{
-
-    if (yourMoney == "vnd") {
-        alert(`${amountUrMoney} VND to USD is  ${formattedUSD} USD `)
-        // console.log(`${amountVND} VND to USD is  ${vndToUsd} USD `) 
-    //    console.log(amountVND + 'la vchung nay tien' + vndToUsd)
-    } else (yourMoney == "usd") 
-    {
-        alert(`${amountUrMoney} USD to VND is ${foramttedVND} VND`)
+  const currencyRatio = {
+    vnd: {
+      usd: 0.000043,
+      krw: 0.051,
+      eur: 0.000039,
+      vnd: 1
+    },
+    usd: {
+      usd: 1,
+      krw: 1193.27,
+      eur: 0.9,
+      vnd: 23235.5
+    },
+    krw: {
+      usd: 0.00084,
+      krw: 1,
+      eur: 0.00075,
+      vnd: 19.47
     }
-}
+  };
+  
+  function getConversionRate(from, to) {
+         return currencyRatio[from.toLowerCase()][to.toLowerCase()];
+  }
 
+  function conversionRate() {
+    
+    let from = document.getElementById("fromCurrencyList").value
+    let to = document.getElementById("toCurrencyList").value
+    let input = amountInput.value;
+    let exchangeRatio = getConversionRate(from,to)
+    let convertedAmount = input * exchangeRatio
+    const res = document.getElementById("result").innerHTML = `${convertedAmount}`
+    }
 
 

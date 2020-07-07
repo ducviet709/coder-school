@@ -1,14 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Currency Converter</title>
+    <link rel="stylesheet" crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" />
+    <link rel="stylesheet" crossorigin="anonymous"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" />
+    <link rel="stylesheet" href="index.css" />
+    
 </head>
+
 <body>
+    
+    <h1 id="converter"> Currency Converter</h1>
+    <div class="container" >
+    <input class="btn-from" type="number" id="amount" />
 
+    <label for="CurrencyList" >From</label>
+    <select name="fromCurrencyList" id="fromCurrencyList">
+        <option value="VND">VND</option>
+        <option value="USD">USD</option>
+        <option value="KRW">KRW</option>
+    </select>
+    <label for="CurrencyList">To</label>
+    <select name="toCurrencyList" id="toCurrencyList">
+        <option value="VND">VND</option>
+        <option value="USD">USD</option>
+        <option value="KRW">KRW</option>
+    </select>
+    <button id="convertButton"> Convert!</button>
 
+    <button class="btn-result" id="result"></button>
+    
 
+</div>
 
 
 
@@ -16,6 +45,7 @@
 
 
     <script src="script.js"></script>
-   
+
 </body>
+
 </html>

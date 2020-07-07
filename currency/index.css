@@ -1,0 +1,46 @@
+.container{
+   
+    color: rgb(92, 32, 189);
+    line-height: 1;
+    font-size: 14px;
+    font-weight: bold;
+        padding: 18px 42px 18px;
+    background-color: #c7ba47;
+    
+
+}
+#converter{
+    color: black;
+    font-size: 80px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.15;
+    margin: 100px;
+  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ 
+.btn-from{
+    border: 0px;
+    width: 260px;
+    color: white;
+    line-height: 1;
+    font-size: 14px;
+    font-weight: bold;
+        padding: 18px 42px 18px;
+    background-color: #1db954;
+    
+}   
+
+.btn-result{
+    border: 0px;
+    width: 260px;
+      line-height: 1;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 18px 42px 18px;
+       margin: 30px;
+
+}
+
